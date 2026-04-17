@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 17 11:37:51 2026
+# Process ID: 33364
+# Current directory: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/impl_1
+# Command line: vivado.exe -log FM_Modulator_DAC_TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FM_Modulator_DAC_TopLevel.tcl -notrace
+# Log file: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/impl_1/FM_Modulator_DAC_TopLevel.vdi
+# Journal file: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FM_Modulator_DAC_TopLevel.tcl -notrace

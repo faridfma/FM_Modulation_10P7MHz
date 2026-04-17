@@ -1,0 +1,32 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FM_Modulation.srcs/sources_1/ip/ila_0/sim/ila_0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/sim/fm_mod_c_addsub_v12_0_i0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/sim/fm_mod_c_addsub_v12_0_i1.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/sim/fm_mod_c_counter_binary_v12_0_i0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/sim/fm_mod_dds_compiler_v6_0_i0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/sim/fm_mod_dds_compiler_v6_0_i1.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/sim/fm_mod_fir_compiler_v7_2_i0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/sim/fm_mod_fir_compiler_v7_2_i1.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/sim/fm_mod_mult_gen_v12_0_i0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/sim/fm_mod_mult_gen_v12_0_i1.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/sim/fm_mod_mult_gen_v12_0_i2.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/srl17e.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/srl33e.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_reg.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/single_reg_w_init.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd" \
+"../../../../FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/fm_mod.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/sim/fm_mod_0.vhd" \
+"../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1/sim/dds_compiler_1.vhd" \
+"../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_0_6/sim/c_addsub_0.vhd" \
+"../../../../FM_Modulation.srcs/sources_1/ip/mult_gen/sim/mult_gen.vhd" \
+"../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_5/sim/dds_compiler_0.vhd" \
+"../../../../../VHDL/FM_ModulationTopLevel.vhd" \
+
+# Do not sort compile order
+nosort

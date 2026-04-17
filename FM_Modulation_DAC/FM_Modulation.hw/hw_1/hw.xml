@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7s50_0" gui_info="dashboard1=hw_ila_1[xc7s50_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7s50_0/hw_ila_1/Status=ILA_STATUS_1;xc7s50_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7s50_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7s50_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7s50_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/FM_Modulator_DAC_TopLevel.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/FM_Modulator_DAC_TopLevel.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/FM_Modulator_DAC_TopLevel.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="ILA" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+      </probeOptions>
+      <nets>
+        <net name="BasebandSigScaled[31]"/>
+        <net name="BasebandSigScaled[30]"/>
+        <net name="BasebandSigScaled[29]"/>
+        <net name="BasebandSigScaled[28]"/>
+        <net name="BasebandSigScaled[27]"/>
+        <net name="BasebandSigScaled[26]"/>
+        <net name="BasebandSigScaled[25]"/>
+        <net name="BasebandSigScaled[24]"/>
+        <net name="BasebandSigScaled[23]"/>
+        <net name="BasebandSigScaled[22]"/>
+        <net name="BasebandSigScaled[21]"/>
+        <net name="BasebandSigScaled[20]"/>
+        <net name="BasebandSigScaled[19]"/>
+        <net name="BasebandSigScaled[18]"/>
+        <net name="BasebandSigScaled[17]"/>
+        <net name="BasebandSigScaled[16]"/>
+        <net name="BasebandSigScaled[15]"/>
+        <net name="BasebandSigScaled[14]"/>
+        <net name="BasebandSigScaled[13]"/>
+        <net name="BasebandSigScaled[12]"/>
+        <net name="BasebandSigScaled[11]"/>
+        <net name="BasebandSigScaled[10]"/>
+        <net name="BasebandSigScaled[9]"/>
+        <net name="BasebandSigScaled[8]"/>
+        <net name="BasebandSigScaled[7]"/>
+        <net name="BasebandSigScaled[6]"/>
+        <net name="BasebandSigScaled[5]"/>
+        <net name="BasebandSigScaled[4]"/>
+        <net name="BasebandSigScaled[3]"/>
+        <net name="BasebandSigScaled[2]"/>
+        <net name="BasebandSigScaled[1]"/>
+        <net name="BasebandSigScaled[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq68&apos;hX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq68&apos;hX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[67:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq68&apos;hX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="BasebandSignal[67]"/>
+        <net name="BasebandSignal[66]"/>
+        <net name="BasebandSignal[65]"/>
+        <net name="BasebandSignal[64]"/>
+        <net name="BasebandSignal[63]"/>
+        <net name="BasebandSignal[62]"/>
+        <net name="BasebandSignal[61]"/>
+        <net name="BasebandSignal[60]"/>
+        <net name="BasebandSignal[59]"/>
+        <net name="BasebandSignal[58]"/>
+        <net name="BasebandSignal[57]"/>
+        <net name="BasebandSignal[56]"/>
+        <net name="BasebandSignal[55]"/>
+        <net name="BasebandSignal[54]"/>
+        <net name="BasebandSignal[53]"/>
+        <net name="BasebandSignal[52]"/>
+        <net name="BasebandSignal[51]"/>
+        <net name="BasebandSignal[50]"/>
+        <net name="BasebandSignal[49]"/>
+        <net name="BasebandSignal[48]"/>
+        <net name="BasebandSignal[47]"/>
+        <net name="BasebandSignal[46]"/>
+        <net name="BasebandSignal[45]"/>
+        <net name="BasebandSignal[44]"/>
+        <net name="BasebandSignal[43]"/>
+        <net name="BasebandSignal[42]"/>
+        <net name="BasebandSignal[41]"/>
+        <net name="BasebandSignal[40]"/>
+        <net name="BasebandSignal[39]"/>
+        <net name="BasebandSignal[38]"/>
+        <net name="BasebandSignal[37]"/>
+        <net name="BasebandSignal[36]"/>
+        <net name="BasebandSignal[35]"/>
+        <net name="BasebandSignal[34]"/>
+        <net name="BasebandSignal[33]"/>
+        <net name="BasebandSignal[32]"/>
+        <net name="BasebandSignal[31]"/>
+        <net name="BasebandSignal[30]"/>
+        <net name="BasebandSignal[29]"/>
+        <net name="BasebandSignal[28]"/>
+        <net name="BasebandSignal[27]"/>
+        <net name="BasebandSignal[26]"/>
+        <net name="BasebandSignal[25]"/>
+        <net name="BasebandSignal[24]"/>
+        <net name="BasebandSignal[23]"/>
+        <net name="BasebandSignal[22]"/>
+        <net name="BasebandSignal[21]"/>
+        <net name="BasebandSignal[20]"/>
+        <net name="BasebandSignal[19]"/>
+        <net name="BasebandSignal[18]"/>
+        <net name="BasebandSignal[17]"/>
+        <net name="BasebandSignal[16]"/>
+        <net name="BasebandSignal[15]"/>
+        <net name="BasebandSignal[14]"/>
+        <net name="BasebandSignal[13]"/>
+        <net name="BasebandSignal[12]"/>
+        <net name="BasebandSignal[11]"/>
+        <net name="BasebandSignal[10]"/>
+        <net name="BasebandSignal[9]"/>
+        <net name="BasebandSignal[8]"/>
+        <net name="BasebandSignal[7]"/>
+        <net name="BasebandSignal[6]"/>
+        <net name="BasebandSignal[5]"/>
+        <net name="BasebandSignal[4]"/>
+        <net name="BasebandSignal[3]"/>
+        <net name="BasebandSignal[2]"/>
+        <net name="BasebandSignal[1]"/>
+        <net name="BasebandSignal[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+      </probeOptions>
+      <nets>
+        <net name="Dac_Out_Sig[11]"/>
+        <net name="Dac_Out_Sig[10]"/>
+        <net name="Dac_Out_Sig[9]"/>
+        <net name="Dac_Out_Sig[8]"/>
+        <net name="Dac_Out_Sig[7]"/>
+        <net name="Dac_Out_Sig[6]"/>
+        <net name="Dac_Out_Sig[5]"/>
+        <net name="Dac_Out_Sig[4]"/>
+        <net name="Dac_Out_Sig[3]"/>
+        <net name="Dac_Out_Sig[2]"/>
+        <net name="Dac_Out_Sig[1]"/>
+        <net name="Dac_Out_Sig[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

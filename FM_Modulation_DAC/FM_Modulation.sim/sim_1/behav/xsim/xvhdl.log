@@ -1,0 +1,59 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/ila_0/sim/ila_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ila_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/sim/fm_mod_c_addsub_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_c_addsub_v12_0_i0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/sim/fm_mod_c_addsub_v12_0_i1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_c_addsub_v12_0_i1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/sim/fm_mod_c_counter_binary_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_c_counter_binary_v12_0_i0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/sim/fm_mod_dds_compiler_v6_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_dds_compiler_v6_0_i0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/sim/fm_mod_dds_compiler_v6_0_i1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_dds_compiler_v6_0_i1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/sim/fm_mod_fir_compiler_v7_2_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_fir_compiler_v7_2_i0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/sim/fm_mod_fir_compiler_v7_2_i1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_fir_compiler_v7_2_i1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/sim/fm_mod_mult_gen_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_mult_gen_v12_0_i0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/sim/fm_mod_mult_gen_v12_0_i1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_mult_gen_v12_0_i1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/sim/fm_mod_mult_gen_v12_0_i2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_mult_gen_v12_0_i2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg_w_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/srl17e.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'srl17e'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/srl33e.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'srlc33e'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/single_reg_w_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'single_reg_w_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xlclockdriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_c86c0e5837'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_delay_3b6ffba94c'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_delay_0373593e96'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_xlregister'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_relational_7d189a9532'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_scale_272f658ca5'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_xladdsub'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_xlcounter_limit'
+INFO: [VRFC 10-3107] analyzing entity 'xldds_compiler_fba2213eb2118711e6f2aa1db4522b9e'
+INFO: [VRFC 10-3107] analyzing entity 'xldds_compiler_8d27e250510b734fc4407a2f0f5343ae'
+INFO: [VRFC 10-3107] analyzing entity 'xlfir_compiler_20a13b4de60d02eef39fcfc6984802e2'
+INFO: [VRFC 10-3107] analyzing entity 'xlfir_compiler_f7ba47f5e9b76f2641a775af35a54d40'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_xlmult'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.ip_user_files/ipstatic/xil_defaultlib/hdl/fm_mod.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_struct'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_default_clock_driver'
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/sim/fm_mod_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fm_mod_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/VHDL/FM_ModulationTopLevel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FM_Modulator_DAC_TopLevel'

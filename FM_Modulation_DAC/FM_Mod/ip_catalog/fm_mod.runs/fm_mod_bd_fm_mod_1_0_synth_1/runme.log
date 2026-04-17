@@ -1,0 +1,1358 @@
+
+*** Running vivado
+    with args -log fm_mod_bd_fm_mod_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fm_mod_bd_fm_mod_1_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fm_mod_bd_fm_mod_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmabrouk/Downloads/FM_Mod/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/fmabrouk/Downloads/FM_Mod/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top fm_mod_bd_fm_mod_1_0 -part xc7s50csga324-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 435.809 ; gain = 103.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fm_mod_bd_fm_mod_1_0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/synth/fm_mod_bd_fm_mod_1_0.vhd:67]
+INFO: [Synth 8-3491] module 'fm_mod' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:510' bound to instance 'U0' of component 'fm_mod' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/synth/fm_mod_bd_fm_mod_1_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'fm_mod' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:517]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_default_clock_driver' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:490]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/xlclockdriver_rd.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_default_clock_driver' (4#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:490]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_struct' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xladdsub' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:383]
+	Parameter core_name0 bound to: fm_mod_c_addsub_v12_0_i0 - type: string 
+	Parameter a_width bound to: 53 - type: integer 
+	Parameter a_bin_pt bound to: 42 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 53 - type: integer 
+	Parameter b_bin_pt bound to: 42 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 34 - type: integer 
+	Parameter s_bin_pt bound to: 14 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 54 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 54 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_addsub_v12_0_i0' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_c_addsub_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_addsub_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 54 - type: integer 
+	Parameter C_B_WIDTH bound to: 54 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 54 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_addsub_v12_0_i0' (11#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xladdsub' (12#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xladdsub__parameterized0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:383]
+	Parameter core_name0 bound to: fm_mod_c_addsub_v12_0_i1 - type: string 
+	Parameter a_width bound to: 68 - type: integer 
+	Parameter a_bin_pt bound to: 14 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 68 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 68 - type: integer 
+	Parameter s_bin_pt bound to: 14 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 69 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 69 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_addsub_v12_0_i1' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'fm_mod_c_addsub_v12_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_addsub_v12_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 69 - type: integer 
+	Parameter C_B_WIDTH bound to: 69 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 69 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_12' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_12' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_addsub_v12_0_i1' (13#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xladdsub__parameterized0' (13#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_c86c0e5837' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_c86c0e5837' (14#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlcounter_limit' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:599]
+	Parameter core_name0 bound to: fm_mod_c_counter_binary_v12_0_i0 - type: string 
+	Parameter op_width bound to: 8 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter cnt_63_48 bound to: 0 - type: integer 
+	Parameter cnt_47_32 bound to: 0 - type: integer 
+	Parameter cnt_31_16 bound to: 0 - type: integer 
+	Parameter cnt_15_0 bound to: 9 - type: integer 
+	Parameter count_limited bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_counter_binary_v12_0_i0' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_c_counter_binary_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:686]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_counter_binary_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:68]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
+	Parameter C_COUNT_TO bound to: 1 - type: string 
+	Parameter C_COUNT_BY bound to: 1 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 0 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_12' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_counter_binary_v12_0_i0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2130' bound to instance 'U0' of component 'c_counter_binary_v12_0_12' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_counter_binary_v12_0_i0' (18#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlcounter_limit' (19#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:599]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_fba2213eb2118711e6f2aa1db4522b9e' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:716]
+INFO: [Synth 8-3491] module 'fm_mod_dds_compiler_v6_0_i0' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:59' bound to instance 'fm_mod_dds_compiler_v6_0_i0_instance' of component 'fm_mod_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 28 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 1 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 111001010110000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_dds_compiler_v6_0_i0' (28#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_fba2213eb2118711e6f2aa1db4522b9e' (29#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:716]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_8d27e250510b734fc4407a2f0f5343ae' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:754]
+INFO: [Synth 8-3491] module 'fm_mod_dds_compiler_v6_0_i1' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:59' bound to instance 'fm_mod_dds_compiler_v6_0_i1_instance' of component 'fm_mod_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:766]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 28 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 1 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 111001010110000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_dds_compiler_v6_0_i1' (30#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_8d27e250510b734fc4407a2f0f5343ae' (31#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:754]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_3b6ffba94c' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_3b6ffba94c' (32#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_0373593e96' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_0373593e96' (33#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_20a13b4de60d02eef39fcfc6984802e2' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:797]
+INFO: [Synth 8-3491] module 'fm_mod_fir_compiler_v7_2_i0' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:59' bound to instance 'fm_mod_fir_compiler_v7_2_i0_instance' of component 'fm_mod_fir_compiler_v7_2_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:814]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_fir_compiler_v7_2_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fm_mod_fir_compiler_v7_2_i0 - type: string 
+	Parameter C_COEF_FILE bound to: fm_mod_fir_compiler_v7_2_i0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 20 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 5 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 37 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 4 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 35 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 4 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 5 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 11 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61157' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:201]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_fir_compiler_v7_2_i0' (47#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_20a13b4de60d02eef39fcfc6984802e2' (48#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:797]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_f7ba47f5e9b76f2641a775af35a54d40' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:848]
+INFO: [Synth 8-3491] module 'fm_mod_fir_compiler_v7_2_i1' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:59' bound to instance 'fm_mod_fir_compiler_v7_2_i1_instance' of component 'fm_mod_fir_compiler_v7_2_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_fir_compiler_v7_2_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fm_mod_fir_compiler_v7_2_i1 - type: string 
+	Parameter C_COEF_FILE bound to: fm_mod_fir_compiler_v7_2_i1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 30 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 5 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 51 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 6 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 17,18 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16,16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 36,36 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 53 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 53 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 53 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,17 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 6 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 5 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 15 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 56 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61157' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:201]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_fir_compiler_v7_2_i1' (50#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_f7ba47f5e9b76f2641a775af35a54d40' (51#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:848]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 8 - type: integer 
+	Parameter a_bin_pt bound to: 0 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 8 - type: integer 
+	Parameter b_bin_pt bound to: 7 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 16 - type: integer 
+	Parameter p_bin_pt bound to: 7 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 8 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 8 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i0' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:1051]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:126]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i0' (57#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult' (58#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult__parameterized0' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i1 - type: string 
+	Parameter a_width bound to: 53 - type: integer 
+	Parameter a_bin_pt bound to: 42 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 34 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 68 - type: integer 
+	Parameter p_bin_pt bound to: 14 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 53 - type: integer 
+	Parameter c_b_width bound to: 34 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 53 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 87 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i1' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'fm_mod_mult_gen_v12_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:1063]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 53 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 34 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 86 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i1' (59#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult__parameterized0' (59#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult__parameterized1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i2 - type: string 
+	Parameter a_width bound to: 34 - type: integer 
+	Parameter a_bin_pt bound to: 14 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 53 - type: integer 
+	Parameter b_bin_pt bound to: 42 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 68 - type: integer 
+	Parameter p_bin_pt bound to: 14 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 34 - type: integer 
+	Parameter c_b_width bound to: 53 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 34 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 87 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i2' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:59' bound to instance 'core_instance2' of component 'fm_mod_mult_gen_v12_0_i2' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:1075]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i2' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 34 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 86 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_dds_compiler_v6_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i2' (60#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult__parameterized1' (60#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlregister' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:183]
+	Parameter d_width bound to: 68 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:31' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized1' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized1' (60#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized1' (60#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlregister' (61#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_7d189a9532' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_7d189a9532' (62#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'sysgen_scale_272f658ca5' [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_scale_272f658ca5' (63#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_struct' (64#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod' (65#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod.vhd:517]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_bd_fm_mod_1_0' (66#1) [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/synth/fm_mod_bd_fm_mod_1_0.vhd:67]
+WARNING: [Synth 8-3331] design sysgen_scale_272f658ca5 has unconnected port clk
+WARNING: [Synth 8-3331] design sysgen_scale_272f658ca5 has unconnected port ce
+WARNING: [Synth 8-3331] design sysgen_scale_272f658ca5 has unconnected port clr
+WARNING: [Synth 8-3331] design sysgen_relational_7d189a9532 has unconnected port clr
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized2 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp__parameterized1 has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized1 has unconnected port core_ce
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized1 has unconnected port core_clr
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized1 has unconnected port core_clk
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp__parameterized0 has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized0 has unconnected port core_ce
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized0 has unconnected port core_clr
+WARNING: [Synth 8-3331] design fm_mod_xlmult__parameterized0 has unconnected port core_clk
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[47]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[46]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[45]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[44]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[43]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[42]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[41]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[40]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[39]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[38]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[37]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[36]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[35]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[34]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[33]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[32]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[31]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[30]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[29]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[28]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[27]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[26]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[25]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fm_mod_fir_compiler_v7_2_i1_instance:s_axis_data_tdata[39] to constant 0 [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+WARNING: [Synth 8-3295] tying undriven pin fm_mod_fir_compiler_v7_2_i1_instance:s_axis_data_tdata[38] to constant 0 [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+WARNING: [Synth 8-3295] tying undriven pin fm_mod_fir_compiler_v7_2_i1_instance:s_axis_data_tdata[37] to constant 0 [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+WARNING: [Synth 8-3295] tying undriven pin fm_mod_fir_compiler_v7_2_i1_instance:s_axis_data_tdata[36] to constant 0 [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+WARNING: [Synth 8-3295] tying undriven pin fm_mod_fir_compiler_v7_2_i1_instance:s_axis_data_tdata[35] to constant 0 [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ipshared/f62e/hdl/fm_mod_entity_declarations.vhd:865]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/constrs/fm_mod.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/constrs/fm_mod.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.srcs/sources_1/bd/fm_mod_bd/ip/fm_mod_bd_fm_mod_1_0/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Parsing XDC File [C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fm_mod_bd_fm_mod_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fm_mod_bd_fm_mod_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 929.527 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 929.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 929.527 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 929.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0. (constraint file  C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0. (constraint file  C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/dont_touch.xdc, line 45).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/addsub1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/addsub2/\comp1.core_instance1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/counter/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/counter2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/dds_compiler_6_0/fm_mod_dds_compiler_v6_0_i0_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/dds_compiler_6_0_1/fm_mod_dds_compiler_v6_0_i1_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/mult3/\comp1.core_instance1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/fm_mod_struct/mult4/\comp2.core_instance2 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:53 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/fm_mod_struct/constant1' (sysgen_constant_c86c0e5837) to 'U0/fm_mod_struct/constant2'
+INFO: [Synth 8-223] decloning instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_symmetric.g_madds[5].g_add_bypass.i_pre_add_bypass' (delay__parameterized16) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[1].g_symmetric.g_madds[5].g_add_bypass.i_pre_add_bypass'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (fm_mod_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module fm_mod.
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[2]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[5]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[6]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[7]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[3]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[9]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[2]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[5]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[7]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[5][0]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[5]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[7]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[9]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[10]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[11]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[12]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[3]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[5]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[6]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[8]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[0]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[1]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[34]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[35]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[35]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[36]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[36]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[37]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[37]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[38]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[38]' (FDRE) to 'fir_compiler_v7_2_11:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[2]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[6]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[4]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[5]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[7]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[2].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[1]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[6]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[12]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[5][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[6]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[11]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[12]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[9]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[10]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[11]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[12]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_store_accum/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[0]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[1]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[2]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[3]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[4]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[6]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[7]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[8]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[9]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[10]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[11]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[12]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[13]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[14]' (FDE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a/gen_dram.gen_rom.d_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_dram.gen_rom.d_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[3]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[5]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[6]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[8]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[9]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[0]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[1]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_accum_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[52]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[53]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[53]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[54]'
+INFO: [Synth 8-3886] merging instance 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[54]' (FDRE) to 'fir_compiler_v7_2_11__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[55]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_compiler_v7_2_11__parameterized1:/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\fm_mod_struct/mult3/comp1.core_instance1 /U0/i_mult/\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\fm_mod_struct/mult4/comp2.core_instance2 /U0/i_mult/\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:58 . Memory (MB): peak = 929.527 ; gain = 597.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/fm_mod_struct/dds_compiler_6_0/fm_mod_dds_compiler_v6_0_i0_instance/U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_double_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/fm_mod_struct/dds_compiler_6_0_1/fm_mod_dds_compiler_v6_0_i1_instance/U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_double_table.i_block_rom.i_pipe_1.pre_asyn_cos_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:14 . Memory (MB): peak = 944.156 ; gain = 611.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:15 . Memory (MB): peak = 946.348 ; gain = 613.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:02:17 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:18 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:19 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:02:19 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:02:19 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:02:20 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:20 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    14|
+|2     |DSP48E1    |     8|
+|3     |DSP48E1_1  |    32|
+|4     |DSP48E1_2  |     2|
+|5     |DSP48E1_3  |     2|
+|6     |DSP48E1_4  |     2|
+|7     |DSP48E1_5  |     2|
+|8     |DSP48E1_6  |     2|
+|9     |DSP48E1_7  |     2|
+|10    |DSP48E1_8  |     2|
+|11    |LUT1       |    20|
+|12    |LUT2       |   281|
+|13    |LUT3       |   274|
+|14    |LUT4       |    46|
+|15    |LUT5       |    38|
+|16    |LUT6       |    28|
+|17    |MUXCY      |   188|
+|18    |RAM16X1D   |   102|
+|19    |RAMB18E1_2 |     1|
+|20    |RAMB18E1_3 |     1|
+|21    |SRL16E     |  1525|
+|22    |XORCY      |   193|
+|23    |FDRE       |  2890|
+|24    |FDSE       |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:20 . Memory (MB): peak = 967.184 ; gain = 634.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 272 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:48 . Memory (MB): peak = 967.184 ; gain = 634.777
+Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:02:20 . Memory (MB): peak = 967.184 ; gain = 634.777
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 553 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 967.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 152 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 50 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 102 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+368 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:25 . Memory (MB): peak = 967.184 ; gain = 647.668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 967.184 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/fm_mod_bd_fm_mod_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fm_mod_bd_fm_mod_1_0, cache-ID = aef7baea6b699c47
+INFO: [Coretcl 2-1174] Renamed 432 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 967.184 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Downloads/FM_Mod/ip_catalog/fm_mod.runs/fm_mod_bd_fm_mod_1_0_synth_1/fm_mod_bd_fm_mod_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fm_mod_bd_fm_mod_1_0_utilization_synth.rpt -pb fm_mod_bd_fm_mod_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 13:22:01 2026...

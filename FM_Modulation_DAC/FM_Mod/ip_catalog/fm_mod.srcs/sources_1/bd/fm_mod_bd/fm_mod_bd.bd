@@ -1,0 +1,90 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x725BB48E162C03D9",
+      "design_src": "SYSGEN",
+      "device": "xc7s50csga324-2",
+      "name": "fm_mod_bd",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fm_mod_1": ""
+    },
+    "ports": {
+      "adc_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fm_mod_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "fm_demodulated": {
+        "type": "data",
+        "direction": "O",
+        "left": "67",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 68} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 9} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "fm_mod_1": {
+        "vlnv": "User_Company:SysGen:fm_mod:1.0",
+        "xci_name": "fm_mod_bd_fm_mod_1_0"
+      }
+    },
+    "nets": {
+      "adc_in_1": {
+        "ports": [
+          "adc_in",
+          "fm_mod_1/adc_in"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "fm_mod_1/clk"
+        ]
+      },
+      "fm_mod_1_fm_demodulated": {
+        "ports": [
+          "fm_mod_1/fm_demodulated",
+          "fm_demodulated"
+        ]
+      }
+    }
+  }
+}

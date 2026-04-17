@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"FM_Modulator_DAC_TopLevel_func_synth.vhd" \
+
+# Do not sort compile order
+nosort

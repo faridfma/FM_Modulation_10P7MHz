@@ -1,0 +1,7 @@
+Running: xsim.dir/FM_ModulatorTopLevel_behav/xsimk.exe -simmode gui -wdb FM_ModulatorTopLevel_behav.wdb -simrunnum 0 -socket 52022
+Design successfully loaded
+Design Loading Memory Usage: 19812 KB (Peak: 19812 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 31452 KB (Peak: 31452 KB)
+Simulation CPU Usage: 20847343 ms

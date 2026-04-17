@@ -1,0 +1,999 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 16 14:03:17 2026
+# Process ID: 5904
+# Current directory: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1
+# Command line: vivado.exe -log fm_mod_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fm_mod_0.tcl
+# Log file: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/fm_mod_0.vds
+# Journal file: C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fm_mod_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Mod/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.cache/ip 
+Command: synth_design -top fm_mod_0 -part xc7s50csga324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14260
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1111.129 ; gain = 18.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fm_mod_0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/synth/fm_mod_0.vhd:67]
+INFO: [Synth 8-3491] module 'fm_mod' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:510' bound to instance 'U0' of component 'fm_mod' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/synth/fm_mod_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'fm_mod' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:517]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_default_clock_driver' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:490]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_default_clock_driver' (4#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:490]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_struct' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xladdsub' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:383]
+	Parameter core_name0 bound to: fm_mod_c_addsub_v12_0_i0 - type: string 
+	Parameter a_width bound to: 53 - type: integer 
+	Parameter a_bin_pt bound to: 42 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 53 - type: integer 
+	Parameter b_bin_pt bound to: 42 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 34 - type: integer 
+	Parameter s_bin_pt bound to: 14 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 54 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 54 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_addsub_v12_0_i0' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_c_addsub_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_addsub_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 54 - type: integer 
+	Parameter C_B_WIDTH bound to: 54 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 54 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_addsub_v12_0_i0' (11#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i0/synth/fm_mod_c_addsub_v12_0_i0.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xladdsub' (12#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xladdsub__parameterized0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:383]
+	Parameter core_name0 bound to: fm_mod_c_addsub_v12_0_i1 - type: string 
+	Parameter a_width bound to: 68 - type: integer 
+	Parameter a_bin_pt bound to: 14 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter c_in_width bound to: 16 - type: integer 
+	Parameter c_in_bin_pt bound to: 4 - type: integer 
+	Parameter c_in_arith bound to: 1 - type: integer 
+	Parameter c_out_width bound to: 16 - type: integer 
+	Parameter c_out_bin_pt bound to: 4 - type: integer 
+	Parameter c_out_arith bound to: 1 - type: integer 
+	Parameter b_width bound to: 68 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter s_width bound to: 68 - type: integer 
+	Parameter s_bin_pt bound to: 14 - type: integer 
+	Parameter s_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter full_s_width bound to: 69 - type: integer 
+	Parameter full_s_arith bound to: 2 - type: integer 
+	Parameter mode bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+	Parameter c_output_width bound to: 69 - type: integer 
+	Parameter c_has_c_in bound to: 0 - type: integer 
+	Parameter c_has_c_out bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_addsub_v12_0_i1' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'fm_mod_c_addsub_v12_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_addsub_v12_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 69 - type: integer 
+	Parameter C_B_WIDTH bound to: 69 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 69 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_addsub_v12_0_i1' (13#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_addsub_v12_0_i1/synth/fm_mod_c_addsub_v12_0_i1.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xladdsub__parameterized0' (13#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_c86c0e5837' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_c86c0e5837' (14#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlcounter_limit' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:599]
+	Parameter core_name0 bound to: fm_mod_c_counter_binary_v12_0_i0 - type: string 
+	Parameter op_width bound to: 8 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter cnt_63_48 bound to: 0 - type: integer 
+	Parameter cnt_47_32 bound to: 0 - type: integer 
+	Parameter cnt_31_16 bound to: 0 - type: integer 
+	Parameter cnt_15_0 bound to: 9 - type: integer 
+	Parameter count_limited bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_c_counter_binary_v12_0_i0' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_c_counter_binary_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:686]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_c_counter_binary_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:68]
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
+	Parameter C_COUNT_TO bound to: 1 - type: string 
+	Parameter C_COUNT_BY bound to: 1 - type: string 
+	Parameter C_COUNT_MODE bound to: 0 - type: integer 
+	Parameter C_THRESH0_VALUE bound to: 1 - type: string 
+	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
+	Parameter C_HAS_THRESH0 bound to: 0 - type: integer 
+	Parameter C_HAS_LOAD bound to: 0 - type: integer 
+	Parameter C_LOAD_LOW bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_FB_LATENCY bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_14' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2146' bound to instance 'U0' of component 'c_counter_binary_v12_0_14' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_c_counter_binary_v12_0_i0' (18#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_c_counter_binary_v12_0_i0/synth/fm_mod_c_counter_binary_v12_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlcounter_limit' (19#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:599]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_fba2213eb2118711e6f2aa1db4522b9e' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:716]
+INFO: [Synth 8-3491] module 'fm_mod_dds_compiler_v6_0_i0' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:59' bound to instance 'fm_mod_dds_compiler_v6_0_i0_instance' of component 'fm_mod_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 28 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 1 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 111001010110000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_20' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_20' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_dds_compiler_v6_0_i0' (28#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i0/synth/fm_mod_dds_compiler_v6_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_fba2213eb2118711e6f2aa1db4522b9e' (29#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:716]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_8d27e250510b734fc4407a2f0f5343ae' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:754]
+INFO: [Synth 8-3491] module 'fm_mod_dds_compiler_v6_0_i1' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:59' bound to instance 'fm_mod_dds_compiler_v6_0_i1_instance' of component 'fm_mod_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:766]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 28 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 1 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 111001010110000001000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_20' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_20' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_dds_compiler_v6_0_i1' (30#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_dds_compiler_v6_0_i1/synth/fm_mod_dds_compiler_v6_0_i1.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_8d27e250510b734fc4407a2f0f5343ae' (31#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:754]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_3b6ffba94c' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_3b6ffba94c' (32#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_0373593e96' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_0373593e96' (33#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_20a13b4de60d02eef39fcfc6984802e2' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:797]
+INFO: [Synth 8-3491] module 'fm_mod_fir_compiler_v7_2_i0' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:59' bound to instance 'fm_mod_fir_compiler_v7_2_i0_instance' of component 'fm_mod_fir_compiler_v7_2_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:814]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_fir_compiler_v7_2_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fm_mod_fir_compiler_v7_2_i0 - type: string 
+	Parameter C_COEF_FILE bound to: fm_mod_fir_compiler_v7_2_i0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 20 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 5 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 37 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 4 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 35 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 4 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 5 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 11 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_15' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_15' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_fir_compiler_v7_2_i0' (47#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/synth/fm_mod_fir_compiler_v7_2_i0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_20a13b4de60d02eef39fcfc6984802e2' (48#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:797]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_f7ba47f5e9b76f2641a775af35a54d40' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:848]
+INFO: [Synth 8-3491] module 'fm_mod_fir_compiler_v7_2_i1' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:59' bound to instance 'fm_mod_fir_compiler_v7_2_i1_instance' of component 'fm_mod_fir_compiler_v7_2_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:865]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_fir_compiler_v7_2_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fm_mod_fir_compiler_v7_2_i1 - type: string 
+	Parameter C_COEF_FILE bound to: fm_mod_fir_compiler_v7_2_i1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 30 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 5 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 51 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 6 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 17,18 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 35 - type: string 
+	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16,16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 36,36 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 53 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 53 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 53 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,17 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 6 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 5 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 15 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 56 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_15' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_15' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_fir_compiler_v7_2_i1' (50#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/synth/fm_mod_fir_compiler_v7_2_i1.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_f7ba47f5e9b76f2641a775af35a54d40' (51#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:848]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 8 - type: integer 
+	Parameter a_bin_pt bound to: 0 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 8 - type: integer 
+	Parameter b_bin_pt bound to: 7 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 16 - type: integer 
+	Parameter p_bin_pt bound to: 7 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 8 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 8 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i0' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'fm_mod_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:1051]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_16' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_16' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i0' (57#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i0/synth/fm_mod_mult_gen_v12_0_i0.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult' (58#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult__parameterized0' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i1 - type: string 
+	Parameter a_width bound to: 53 - type: integer 
+	Parameter a_bin_pt bound to: 42 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 34 - type: integer 
+	Parameter b_bin_pt bound to: 14 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 68 - type: integer 
+	Parameter p_bin_pt bound to: 14 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 53 - type: integer 
+	Parameter c_b_width bound to: 34 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 53 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 87 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i1' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'fm_mod_mult_gen_v12_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:1063]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 53 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 34 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 86 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_16' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_16' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i1' (59#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i1/synth/fm_mod_mult_gen_v12_0_i1.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult__parameterized0' (59#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlmult__parameterized1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+	Parameter core_name0 bound to: fm_mod_mult_gen_v12_0_i2 - type: string 
+	Parameter a_width bound to: 34 - type: integer 
+	Parameter a_bin_pt bound to: 14 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 53 - type: integer 
+	Parameter b_bin_pt bound to: 42 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 68 - type: integer 
+	Parameter p_bin_pt bound to: 14 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 34 - type: integer 
+	Parameter c_b_width bound to: 53 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 34 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 87 - type: integer 
+INFO: [Synth 8-3491] module 'fm_mod_mult_gen_v12_0_i2' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:59' bound to instance 'core_instance2' of component 'fm_mod_mult_gen_v12_0_i2' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:1075]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_mult_gen_v12_0_i2' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 34 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 86 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_16' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_16' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_mult_gen_v12_0_i2' (60#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_mult_gen_v12_0_i2/synth/fm_mod_mult_gen_v12_0_i2.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlmult__parameterized1' (60#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:967]
+INFO: [Synth 8-638] synthesizing module 'fm_mod_xlregister' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:183]
+	Parameter d_width bound to: 68 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init__parameterized1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init__parameterized1' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 68 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init__parameterized1' (60#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init__parameterized1' (60#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_xlregister' (61#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_7d189a9532' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:238]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_7d189a9532' (62#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'sysgen_scale_272f658ca5' [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_scale_272f658ca5' (63#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod_entity_declarations.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_struct' (64#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod' (65#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/xil_defaultlib/hdl/fm_mod.vhd:517]
+INFO: [Synth 8-256] done synthesizing module 'fm_mod_0' (66#1) [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/synth/fm_mod_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:57 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:57 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.718 . Memory (MB): peak = 1672.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/fm_mod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0'
+Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/constrs/fm_mod.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.srcs/sources_1/ip/fm_mod_0_1/constrs/fm_mod.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fm_mod_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fm_mod_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1672.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.345 . Memory (MB): peak = 1672.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  {C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc}, line 39).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance/U0. (constraint file  {C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc}, line 42).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance/U0. (constraint file  {C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc}, line 42).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance/U0. (constraint file  {C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc}, line 45).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance/U0. (constraint file  {C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/dont_touch.xdc}, line 45).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/mult4/\comp2.core_instance2 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/mult3/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_2/fm_mod_fir_compiler_v7_2_i1_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_3/fm_mod_fir_compiler_v7_2_i1_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2/fm_mod_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/fir_compiler_7_2_1/fm_mod_fir_compiler_v7_2_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/dds_compiler_6_0_1/fm_mod_dds_compiler_v6_0_i1_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/dds_compiler_6_0/fm_mod_dds_compiler_v6_0_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/counter/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/counter2/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/addsub2/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/fm_mod_struct/addsub1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:16 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/fm_mod_struct/constant1' (sysgen_constant_c86c0e5837) to 'U0/fm_mod_struct/constant2'
+INFO: [Synth 8-223] decloning instance 'fir_compiler_v7_2_15__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_symmetric.g_madds[5].g_add_bypass.i_pre_add_bypass' (delay__parameterized16) to 'fir_compiler_v7_2_15__parameterized1:/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[1].g_symmetric.g_madds[5].g_add_bypass.i_pre_add_bypass'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:36 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:40 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:40 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    14|
+|2     |DSP48E1  |    54|
+|11    |LUT1     |    26|
+|12    |LUT2     |   252|
+|13    |LUT3     |   166|
+|14    |LUT4     |   128|
+|15    |LUT5     |    36|
+|16    |LUT6     |     8|
+|17    |MUXCY    |   187|
+|18    |RAM16X1D |   102|
+|19    |RAMB18E1 |     2|
+|21    |SRL16E   |  1525|
+|22    |XORCY    |   136|
+|23    |FDRE     |  2744|
+|24    |FDSE     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:31 . Memory (MB): peak = 1672.375 ; gain = 580.008
+Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:41 . Memory (MB): peak = 1672.375 ; gain = 580.008
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.333 . Memory (MB): peak = 1672.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 495 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1672.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 151 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 49 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 102 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+186 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:55 . Memory (MB): peak = 1672.375 ; gain = 580.008
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/fm_mod_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fm_mod_0, cache-ID = c8ade99bc53576f3
+INFO: [Coretcl 2-1174] Renamed 428 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/DDS_FM_Transmitter_100Hz _DAC_2020/FM_Modulation_DAC/FM_Modulation.runs/fm_mod_0_synth_1/fm_mod_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fm_mod_0_utilization_synth.rpt -pb fm_mod_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 14:05:38 2026...

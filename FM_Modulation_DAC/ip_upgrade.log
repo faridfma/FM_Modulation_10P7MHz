@@ -1,0 +1,481 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 13 14:45:38 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_gen_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of mult_gen_0 (xilinx.com:ip:mult_gen:12.0 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'mult_gen_0'. These changes may impact your design.
+
+
+-Upgraded port 'P' width 46 differs from original width 40
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 13 14:45:35 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_compiler_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of dds_compiler_1 (xilinx.com:ip:dds_compiler:6.0 (Rev. 20)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'dds_compiler_1'. These changes may impact your design.
+
+
+-Upgraded port 'm_axis_data_tdata' width 16 differs from original width 32
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'TDATA_NUM_BYTES' is no longer present on the upgraded IP 'dds_compiler_1', and cannot be set to '2'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -user_name dds_compiler_1
+set_property -dict "\
+  CONFIG.Amplitude_Mode {Full_Range} \
+  CONFIG.Channels {1} \
+  CONFIG.Component_Name {dds_compiler_1} \
+  CONFIG.DATA_Has_TLAST {Not_Required} \
+  CONFIG.DDS_Clock_Rate {200} \
+  CONFIG.DSP48_Use {Minimal} \
+  CONFIG.Frequency_Resolution {0.4} \
+  CONFIG.GUI_Behaviour {Coregen} \
+  CONFIG.Has_ACLKEN {false} \
+  CONFIG.Has_ARESETn {false} \
+  CONFIG.Has_Phase_Out {false} \
+  CONFIG.Has_TREADY {false} \
+  CONFIG.Latency {3} \
+  CONFIG.Latency_Configuration {Auto} \
+  CONFIG.M_AXIS_DATA.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DATA.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DATA.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DATA.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DATA.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DATA.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DATA.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DATA.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DATA.PHASE {0.000} \
+  CONFIG.M_AXIS_DATA.TDATA_NUM_BYTES {4} \
+  CONFIG.M_AXIS_DATA.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DATA.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DATA.TUSER_WIDTH {0} \
+  CONFIG.M_DATA_Has_TUSER {Not_Required} \
+  CONFIG.M_PHASE_Has_TUSER {Not_Required} \
+  CONFIG.Memory_Type {Auto} \
+  CONFIG.Mode_of_Operation {Standard} \
+  CONFIG.Modulus {9} \
+  CONFIG.Negative_Cosine {false} \
+  CONFIG.Negative_Sine {false} \
+  CONFIG.Noise_Shaping {Auto} \
+  CONFIG.OUTPUT_FORM {Twos_Complement} \
+  CONFIG.Optimization_Goal {Auto} \
+  CONFIG.Output_Frequency1 {0} \
+  CONFIG.Output_Frequency10 {0} \
+  CONFIG.Output_Frequency11 {0} \
+  CONFIG.Output_Frequency12 {0} \
+  CONFIG.Output_Frequency13 {0} \
+  CONFIG.Output_Frequency14 {0} \
+  CONFIG.Output_Frequency15 {0} \
+  CONFIG.Output_Frequency16 {0} \
+  CONFIG.Output_Frequency2 {0} \
+  CONFIG.Output_Frequency3 {0} \
+  CONFIG.Output_Frequency4 {0} \
+  CONFIG.Output_Frequency5 {0} \
+  CONFIG.Output_Frequency6 {0} \
+  CONFIG.Output_Frequency7 {0} \
+  CONFIG.Output_Frequency8 {0} \
+  CONFIG.Output_Frequency9 {0} \
+  CONFIG.Output_Selection {Sine_and_Cosine} \
+  CONFIG.Output_Width {8} \
+  CONFIG.PINC1 {0} \
+  CONFIG.PINC10 {0} \
+  CONFIG.PINC11 {0} \
+  CONFIG.PINC12 {0} \
+  CONFIG.PINC13 {0} \
+  CONFIG.PINC14 {0} \
+  CONFIG.PINC15 {0} \
+  CONFIG.PINC16 {0} \
+  CONFIG.PINC2 {0} \
+  CONFIG.PINC3 {0} \
+  CONFIG.PINC4 {0} \
+  CONFIG.PINC5 {0} \
+  CONFIG.PINC6 {0} \
+  CONFIG.PINC7 {0} \
+  CONFIG.PINC8 {0} \
+  CONFIG.PINC9 {0} \
+  CONFIG.POFF1 {0} \
+  CONFIG.POFF10 {0} \
+  CONFIG.POFF11 {0} \
+  CONFIG.POFF12 {0} \
+  CONFIG.POFF13 {0} \
+  CONFIG.POFF14 {0} \
+  CONFIG.POFF15 {0} \
+  CONFIG.POFF16 {0} \
+  CONFIG.POFF2 {0} \
+  CONFIG.POFF3 {0} \
+  CONFIG.POFF4 {0} \
+  CONFIG.POFF5 {0} \
+  CONFIG.POFF6 {0} \
+  CONFIG.POFF7 {0} \
+  CONFIG.POFF8 {0} \
+  CONFIG.POFF9 {0} \
+  CONFIG.POR_mode {false} \
+  CONFIG.Parameter_Entry {System_Parameters} \
+  CONFIG.PartsPresent {Phase_Generator_and_SIN_COS_LUT} \
+  CONFIG.Phase_Increment {Streaming} \
+  CONFIG.Phase_Offset_Angles1 {0} \
+  CONFIG.Phase_Offset_Angles10 {0} \
+  CONFIG.Phase_Offset_Angles11 {0} \
+  CONFIG.Phase_Offset_Angles12 {0} \
+  CONFIG.Phase_Offset_Angles13 {0} \
+  CONFIG.Phase_Offset_Angles14 {0} \
+  CONFIG.Phase_Offset_Angles15 {0} \
+  CONFIG.Phase_Offset_Angles16 {0} \
+  CONFIG.Phase_Offset_Angles2 {0} \
+  CONFIG.Phase_Offset_Angles3 {0} \
+  CONFIG.Phase_Offset_Angles4 {0} \
+  CONFIG.Phase_Offset_Angles5 {0} \
+  CONFIG.Phase_Offset_Angles6 {0} \
+  CONFIG.Phase_Offset_Angles7 {0} \
+  CONFIG.Phase_Offset_Angles8 {0} \
+  CONFIG.Phase_Offset_Angles9 {0} \
+  CONFIG.Phase_Width {29} \
+  CONFIG.Phase_offset {None} \
+  CONFIG.Resync {false} \
+  CONFIG.S_AXIS_PHASE.CLK_DOMAIN {} \
+  CONFIG.S_AXIS_PHASE.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS_PHASE.HAS_TKEEP {0} \
+  CONFIG.S_AXIS_PHASE.HAS_TLAST {0} \
+  CONFIG.S_AXIS_PHASE.HAS_TREADY {0} \
+  CONFIG.S_AXIS_PHASE.HAS_TSTRB {0} \
+  CONFIG.S_AXIS_PHASE.INSERT_VIP {0} \
+  CONFIG.S_AXIS_PHASE.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS_PHASE.PHASE {0.000} \
+  CONFIG.S_AXIS_PHASE.TDATA_NUM_BYTES {4} \
+  CONFIG.S_AXIS_PHASE.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS_PHASE.TID_WIDTH {0} \
+  CONFIG.S_AXIS_PHASE.TUSER_WIDTH {0} \
+  CONFIG.S_CONFIG_Sync_Mode {On_Vector} \
+  CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+  CONFIG.S_PHASE_TUSER_Width {1} \
+  CONFIG.Spurious_Free_Dynamic_Range {45} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {M_AXIS_PHASE:S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_PHASE} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {100000000} \
+  CONFIG.aclk_intf.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.000} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} \
+  CONFIG.event_phase_in_invalid_intf.PortWidth {1} \
+  CONFIG.event_phase_in_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_pinc_invalid_intf.PortWidth {1} \
+  CONFIG.event_pinc_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_poff_invalid_intf.PortWidth {1} \
+  CONFIG.event_poff_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_config_tlast_missing_intf.PortWidth {1} \
+  CONFIG.event_s_config_tlast_missing_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_config_tlast_unexpected_intf.PortWidth {1} \
+  CONFIG.event_s_config_tlast_unexpected_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_chanid_incorrect_intf.PortWidth {1} \
+  CONFIG.event_s_phase_chanid_incorrect_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_tlast_missing_intf.PortWidth {1} \
+  CONFIG.event_s_phase_tlast_missing_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_tlast_unexpected_intf.PortWidth {1} \
+  CONFIG.event_s_phase_tlast_unexpected_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.explicit_period {false} \
+  CONFIG.period {1} " [get_ips dds_compiler_1]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 13 14:45:32 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_compiler_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of dds_compiler_0 (xilinx.com:ip:dds_compiler:6.0 (Rev. 20)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 13 14:45:29 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 6)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'clk_wiz_0'.
+
+
+-Upgrade has added interface 'clock_CLK_OUT2' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'clock_CLK_OUT3' (xilinx.com:signal:clock:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'clk_wiz_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'clk_out2'
+
+-Upgrade has added port 'clk_out3'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 13 14:45:23 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'c_addsub_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of c_addsub_0 (xilinx.com:ip:c_addsub:12.0 (Rev. 14)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'c_addsub_0'. These changes may impact your design.
+
+
+-Upgraded port 'A' width 14 differs from original width 8
+
+-Upgraded port 'S' width 29 differs from original width 28
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec 24 17:37:07 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_gen_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mult_gen_0 (xilinx.com:ip:mult_gen:12.0) from (Rev. 14) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec 24 17:37:05 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_compiler_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dds_compiler_1 (xilinx.com:ip:dds_compiler:6.0) from (Rev. 17) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec 24 17:37:03 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_compiler_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dds_compiler_0 (xilinx.com:ip:dds_compiler:6.0) from (Rev. 17) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec 24 17:37:00 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Dec 24 17:36:56 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'c_addsub_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of c_addsub_0 (xilinx.com:ip:c_addsub:12.0) from (Rev. 12) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 22 12:52:20 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FM_Modulator_dds_compiler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of FM_Modulator_dds_compiler_0_0 (xilinx.com:ip:dds_compiler:6.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 22 12:52:20 2025
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FM_Modulator_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of FM_Modulator_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 2)) to Vivado generation flows.
+

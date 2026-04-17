@@ -1,0 +1,7 @@
+Running: xsim.dir/FM_Modulator_DAC_TopLevel_func_synth/xsimk.exe -simmode gui -wdb FM_Modulator_DAC_TopLevel_func_synth.wdb -simrunnum 0 -socket 59237
+Design successfully loaded
+Design Loading Memory Usage: 20412 KB (Peak: 20412 KB)
+Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 29836 KB (Peak: 29836 KB)
+Simulation CPU Usage: 25640 ms
